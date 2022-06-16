@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+background-image: linear-gradient( hsla(0, 100%, 74%, 0.6), hsla(0, 100%, 74%, 0.6) ),url(img/bg-intro-desktop.png);
+background-size: cover;
+background-position: top;
+font-size: 16px;
+}
+a,
+p,
+h1{
+    color: white;
+    text-decoration: none;
+}
+.content{
+    margin: 5rem 10rem;
+    display: flex;
+    justify-content: space-between;
+}
+.text{
+    width: 31rem;
+    display: flex;
+    align-items: center;
+}
+.header{
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.form-section{
+    width: 31rem;
+}
+.heading-form{
+    background-color: hsl(248, 32%, 49%);
+    padding: 1rem 2.3rem;
+    border-radius: 4px;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.heading-form span{
+    color: hsl(246, 25%, 77%);
+}
+.form{
+    background-color: white;
+    
+    padding: 2rem;
+    border-radius: 4px;
+}
+.form input{
+    border: 2px solid hsl(246, 25%, 77%);
+    border-radius: 4px;
+    display: block;
+    font-size: 12px;
+    padding: 12px;
+    width: 100%;
+    
+}
+input:not(:first-child){
+    margin-top: 2rem;
+}
+.error{
+    display: none;
+}
+input:focus{
+    outline: none;
+    border:2px solid hsl(248, 32%, 49%);
+}
+input:focus:invalid{
+    outline: none;
+    border: 1px solid hsl(0, 100%, 74%);
+    background-image: url(img/icon-error.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-origin: content-box;
+}
+input:focus:invalid+.error{
+    display: inline;
+    color: hsl(0, 100%, 74%);
+    float: right;
+    font-size: 14px;
+}
+
+.btn{
+    background-color: hsl(154, 59%, 51%);
+    padding: 1rem 2.3rem;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  .form-text p{
+    color: hsl(246, 25%, 77%);
+    text-align: center;
+  }
+  .form-text a{
+      color: hsl(0, 100%, 74%);
+      cursor: pointer;
+  }
+@media (max-width:375px){
+    body{
+        background-image: linear-gradient( hsla(0, 100%, 74%, 0.6), hsla(0, 100%, 74%, 0.6) ),url(img/bg-intro-mobile.png);
+        background-size: cover;
+        background-position: top;
+        font-size: 16px;
+        }
+        .content{
+            margin: 2rem auto;
+            display: block;
+        }
+        .text{
+            width: 100vw;
+            display: block;
+            text-align: center;
+       
+        } 
+        .media{
+            margin-left: 2rem;
+            margin-right: 2rem;
+        }
+        .form-section{
+            width: 100vw;
+            display: block;
+            margin-top: 2rem;
+            
+        }
+        .btn{
+            padding: 1rem;
+            border: none;
+            border-radius: 4px;
+            text-align: center;
+            cursor: pointer;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+          }
+}
