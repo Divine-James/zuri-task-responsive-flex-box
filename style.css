@@ -8,7 +8,7 @@
 }
 
 body {
-    background-image: url(img/bg-intro-desktop.png);
+    background-image: url(bg-intro-desktop.png);
     background-color: hsl(0, 100%, 74%);
     background-size: cover;
     background-position: top;
@@ -96,7 +96,7 @@ input:focus {
 input:focus:invalid {
     outline: none;
     border: 1px solid hsl(0, 100%, 74%);
-    background-image: url(img/icon-error.svg);
+    background-image: url(icon-error.svg);
     background-repeat: no-repeat;
     background-position: right;
     background-origin: content-box;
@@ -132,7 +132,7 @@ input:focus:invalid+.error {
 
 @media (max-width:375px) {
     body {
-        background-image: url(img/bg-intro-mobile.png);
+        background-image: url(bg-intro-mobile.png);
         background-color: hsl(0, 100%, 74%);
         background-size: cover;
         background-position: top;
