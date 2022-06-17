@@ -48,6 +48,7 @@ h1 {
     width: 31rem;
 }
 
+
 .heading-form {
     background-color: hsl(248, 32%, 49%);
     padding: 1rem 2.3rem;
@@ -73,10 +74,10 @@ h1 {
     border: 2px solid hsl(246, 25%, 77%);
     border-radius: 4px;
     display: block;
-    font-size: 12px;
+    font-size: 14px;
     padding: 12px;
     width: 100%;
-
+    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -92,7 +93,11 @@ input:focus {
     outline: none;
     border: 2px solid hsl(154, 59%, 51%);
 }
-
+input::-webkit-input-placeholder{
+    color: hsl(249, 10%, 26%) ;
+    padding-left: 2px;
+    font-weight: 600;
+}
 input:focus:invalid {
     outline: none;
     border: 1px solid hsl(0, 100%, 74%);
@@ -123,6 +128,8 @@ input:focus:invalid+.error {
 .form-text p {
     color: hsl(246, 25%, 77%);
     text-align: center;
+    font-weight: 400;
+    font-size: 12px;
 }
 
 .form-text a {
