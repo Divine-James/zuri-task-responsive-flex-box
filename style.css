@@ -1,73 +1,99 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
-background-image: linear-gradient( hsla(0, 100%, 74%, 0.6), hsla(0, 100%, 74%, 0.6) ),url(img/bg-intro-desktop.png);
-background-size: cover;
-background-position: top;
-font-size: 16px;
+
+body {
+    background-image: url(img/bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%);
+    background-size: cover;
+    background-position: top;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    min-width: 325px;
+    max-width: 1440px;
 }
+
 a,
 p,
-h1{
+h1 {
     color: white;
     text-decoration: none;
 }
-.content{
+
+.content {
     margin: 5rem 10rem;
     display: flex;
     justify-content: space-between;
 }
-.text{
+
+.text {
     width: 31rem;
     display: flex;
     align-items: center;
+
 }
-.header{
+
+.header {
     font-weight: 700;
     margin-bottom: 1rem;
+    font-size: 40px;
 }
-.form-section{
+
+.form-section {
     width: 31rem;
 }
-.heading-form{
+
+.heading-form {
     background-color: hsl(248, 32%, 49%);
     padding: 1rem 2.3rem;
     border-radius: 4px;
     text-align: center;
     margin-bottom: 1rem;
+    font-weight: 400;
+
 }
-.heading-form span{
+
+.heading-form span {
     color: hsl(246, 25%, 77%);
 }
-.form{
+
+.form {
     background-color: white;
-    
+    box-shadow: 0 1px 1px 0 hsl(246, 25%, 77%);
     padding: 2rem;
     border-radius: 4px;
 }
-.form input{
+
+.form input {
     border: 2px solid hsl(246, 25%, 77%);
     border-radius: 4px;
     display: block;
     font-size: 12px;
     padding: 12px;
     width: 100%;
-    
+
 }
-input:not(:first-child){
+
+
+input:not(:first-child) {
     margin-top: 2rem;
 }
-.error{
+
+.error {
     display: none;
 }
-input:focus{
+
+input:focus {
     outline: none;
-    border:2px solid hsl(248, 32%, 49%);
+    border: 2px solid hsl(154, 59%, 51%);
 }
-input:focus:invalid{
+
+input:focus:invalid {
     outline: none;
     border: 1px solid hsl(0, 100%, 74%);
     background-image: url(img/icon-error.svg);
@@ -75,14 +101,15 @@ input:focus:invalid{
     background-position: right;
     background-origin: content-box;
 }
-input:focus:invalid+.error{
+
+input:focus:invalid+.error {
     display: inline;
     color: hsl(0, 100%, 74%);
     float: right;
     font-size: 14px;
 }
 
-.btn{
+.btn {
     background-color: hsl(154, 59%, 51%);
     padding: 1rem 2.3rem;
     border: none;
@@ -91,49 +118,58 @@ input:focus:invalid+.error{
     cursor: pointer;
     margin-top: 2rem;
     margin-bottom: 1rem;
-  }
-  .form-text p{
+}
+
+.form-text p {
     color: hsl(246, 25%, 77%);
     text-align: center;
-  }
-  .form-text a{
-      color: hsl(0, 100%, 74%);
-      cursor: pointer;
-  }
-@media (max-width:375px){
-    body{
-        background-image: linear-gradient( hsla(0, 100%, 74%, 0.6), hsla(0, 100%, 74%, 0.6) ),url(img/bg-intro-mobile.png);
+}
+
+.form-text a {
+    color: hsl(0, 100%, 74%);
+    cursor: pointer;
+}
+
+@media (max-width:375px) {
+    body {
+        background-image: url(img/bg-intro-mobile.png);
+        background-color: hsl(0, 100%, 74%);
         background-size: cover;
         background-position: top;
         font-size: 16px;
-        }
-        .content{
-            margin: 2rem auto;
-            display: block;
-        }
-        .text{
-            width: 100vw;
-            display: block;
-            text-align: center;
-       
-        } 
-        .media{
-            margin-left: 2rem;
-            margin-right: 2rem;
-        }
-        .form-section{
-            width: 100vw;
-            display: block;
-            margin-top: 2rem;
-            
-        }
-        .btn{
-            padding: 1rem;
-            border: none;
-            border-radius: 4px;
-            text-align: center;
-            cursor: pointer;
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-          }
+    }
+
+    .content {
+        margin: 2rem auto;
+        display: block;
+    }
+
+    .text {
+        width: 100vw;
+        display: block;
+        text-align: center;
+
+    }
+
+    .media {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .form-section {
+        width: 100vw;
+        display: block;
+        margin-top: 2rem;
+
+    }
+
+    .btn {
+        padding: 1rem;
+        border: none;
+        border-radius: 4px;
+        text-align: center;
+        cursor: pointer;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
 }
